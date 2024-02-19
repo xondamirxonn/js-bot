@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled Calendar Input</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .calendar-input {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .calendar-input:focus {
+    border-color: #007bff;
+  }
+
+  /* Styling the calendar icon */
+  .calendar-icon {
+    position: relative;
+  }
+
+  .calendar-icon::after {
+    content: "\1F4C5"; /* Unicode for calendar emoji */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+<input type="date" class="calendar-input">
+</body>
+</html>
+x
